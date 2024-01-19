@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronautilus</title>
+    <style>
+        body#container{
+            position: relative;
+            height: 97vh;
+            background-image: url('imagens/espaco.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+        div#conteudo{
+            position: absolute;
+            
+            background-color: transparent;
+            background-image: url('imagens/astronauta.png');
+            background-position: center center;
+            background-size: cover;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body id="container">
+    <div id="conteudo">
+    </div>
+</body>
+</html>
