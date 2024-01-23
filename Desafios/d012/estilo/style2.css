@@ -8,75 +8,73 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
-
-* {
-    margin: 0px;
+*{
     padding: 0px;
+    margin: 0px;
 }
-
-html, body{
+body{
     font-family: var(--fonte1);
-    background-color: darkgray;
+    background-color: white;
     min-height: 100vh;
 }
 header{
     background-color: black;
-    color: white;
     text-align: center;
+    color: white;
 }
 header h1{
     font-family: var(--fonte2);
-    padding-top: 50px;
-    font-variant: small-caps;
     font-size: 3em;
+    font-variant: small-caps;
+    padding-top: 50px;
 }
 header p{
     padding-bottom: 50px;
 }
-a {
-    color: white;
+a{
     text-decoration: none;
-    font-weight: bolder;
+    color: white;
+    font-weight: bold;
 }
 a:hover{
     text-decoration: underline;
 }
 section{
+    background-color: white;
     font-family: var(--fonte3);
+    line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
     font-size: 1.5em;
 }
-section > p{
-    padding-bottom: 2em;
-    text-shadow: 1px 1px 0px black;
-}
 section.normal{
-    background-color: white;
     color: black;
 }
 section.imagem{
     box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
-    background-color: rgb(66, 65, 65);
     color: white;
-    background-size: cover;
-    background-attachment: fixed;
 }
 section.imagem > p{
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(22, 22, 22, 0.438);
+    padding: 15px;
 }
-section#img01{
+section#img1{
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
 }
-section#img02{
+section#img2{
     background-image: url('../imagens/background002.jpg');
     background-position: right center;
-
+    background-attachment: fixed;
+    background-size: cover;
+}
+section > p{
+    padding-bottom: 2em;
+    text-shadow: 1px 1px 0px black;
 }
 footer{
     background-color: black;
